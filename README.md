@@ -41,17 +41,6 @@ Open the example in console or any python supported IDE (for example Spyder). Se
 
  There are 4 samples: FFT, Logistic Regression, Kmeans, GMM. For each one of these, one or multiple files are available to execute.
 
-| SAMPLE FILE NAME | EXPECTED OUTPUT | Note |
-| --- | --- | --- |
-| FreqTime.py | Frequency v/s Time plot |   |
-| Utils.py | Have all the functions for all the modules to calculate amplitude. |  |
-| Train\_logistic\_regression.py | Saved weight of the trained module in the filename &quot;LogisticRegression&quot; | Training for the logistic regression is done on testset1, bearing4\_y axis (failed), bearing 2\_x axis (passed) and testset2 bearing1 (failed), bearing2 (passed). *The training dataset is increased for a better result. |
-| Test\_logistic\_regression.py | Result for the particular test set which bearing is failed and the plot of last 100 predicted labels for all the bearings. | Take the input path from the user, to check which bearing is suspected to fail and which is in normal condition. |
-| Train\_kmeans.py | Saved weight of the trained module in the filename &quot;Kmeans&quot; | Training for the Kmeans is done on testset1, bearing4_y axis (failed), bearing 2_x axis (passed) and testset2 bearing1 (failed), bearing2 (passed). *The training dataset is increased for a better result.|
-| Test\_kmeans.py | Result for the particular test set which bearing is failed and the plot of last 100 predicted labels for all the bearings. | Take the input path from the user to check which bearing is suspected to fail and which is in normal condition. The label 0-7 is the range (early-most critical for failure). It is able to detect the bearing 1_y axis which is very close to failure. |
-| Train\_GMM.py | Saved weight of the trained module in the filename &quot;GMM&quot; | Training for the GMM is done on testset1, bearing4\_y axis (failed), bearing 2\_x axis (passed) and testset2 bearing1 (failed), bearing2 (passed). *The training dataset is increased for a better result. |
-| Test\_GMM.py | Result for the particular test set which bearing is failed and the plot of last 100 predicted labels for all the bearings. | Take the input path from the user, to check which bearing is suspected to fail, and which is in normal condition. The label **0-2 is the range (early-most critical for failure)**. |
-
 **Understanding the analysis methods**
 
 **1. FFT:** A fast Fourier transform (FFT) is an algorithm that samples a signal over a period of time (or space) and divides it into its frequency components. These components are single sinusoidal oscillations at distinct frequencies each with their own amplitude and phase.
